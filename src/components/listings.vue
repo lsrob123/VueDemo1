@@ -1,16 +1,5 @@
-<template>
-  <div class="listings">
-      <h2>Listings at {{currentDateTime}}</h2>
-      <div class="listings-item" style="color: red;">Count Local: {{count}}</div>
-      <div class="listings-item">
-        <button v-on:click="refresh(1)">Refresh</button>
-      </div>
-  </div>
-</template>
-
 <script>
 export default {
-  //name: "listings",
   data() {
     return {
       currentDateTime: new Date(),
@@ -28,6 +17,16 @@ export default {
   computed: {}
 };
 </script>
+
+<template>
+  <div class="listings">
+      <h2>Listings at {{currentDateTime}}</h2>
+      <div class="listings-item" style="color: red;">Count Local: {{count}}</div>
+      <div class="listings-item">
+        <button v-on:click="refresh(1)">Refresh</button>
+      </div>
+  </div>
+</template>
 
 <style scoped>
 .listings {
