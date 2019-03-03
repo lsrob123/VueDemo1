@@ -4,6 +4,10 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  entry: {
+    polyfill: 'babel-polyfill',
+    app: './src/index.js'
+  },
   module: {
     rules: [
       {

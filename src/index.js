@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import store from './store-modules/store';
+import store from './store/store';
 
 import App from './app.vue';
 import Highlights from "./components/highlights.vue";
